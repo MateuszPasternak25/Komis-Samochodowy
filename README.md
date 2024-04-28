@@ -35,7 +35,9 @@ aplikacja do zarządzania wypożyczalnią samochodów.
    .koszty
    .opis napraw
    .samochód
-6. powiadomienia
+5. powiadomienia
+   .względem przebiegu - serwis
+   .względem czasu - wypożyczenie
    
    
    
