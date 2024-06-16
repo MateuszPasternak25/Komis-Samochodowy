@@ -12,7 +12,7 @@ aplikacja do zarządzania komisem samochodów.
    .cena sprzedaży
    .status sprzedaży
    
-3. klienci
+2. klienci
    -dodawanie
    -usuwanie
    -edytowanie
@@ -20,6 +20,12 @@ aplikacja do zarządzania komisem samochodów.
    .imie i nazwisko
    .pesel
    .adres zam.historia
+
+3. dane sprzedaży
+   -samochód
+   -klient
+   -data
+   -kwoty
 
    
    
