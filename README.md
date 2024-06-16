@@ -1,5 +1,5 @@
-# Wypozyczalnia-samochodow
-aplikacja do zarządzania wypożyczalnią samochodów.
+# Komis Samochodowy
+aplikacja do zarządzania komisem samochodów.
 1. Samochody
    -dodawanie
    -usuwanie
@@ -8,12 +8,11 @@ aplikacja do zarządzania wypożyczalnią samochodów.
    .marka
    .model
    .rok prod.
-   .nr rejestracyjny
-   .ilość paliwa przed i po
-   .stan uszokdzeń
-   .przebieg
-   .historia
-2. klienci
+   .cena zakupu
+   .cena sprzedaży
+   .status sprzedaży
+   
+3. klienci
    -dodawanie
    -usuwanie
    -edytowanie
@@ -21,23 +20,7 @@ aplikacja do zarządzania wypożyczalnią samochodów.
    .imie i nazwisko
    .pesel
    .adres zam.historia
-3. Wypożyczenie
-   -dodawanie
-   -usuwanie
-   -edytowanie
-   -dane:
-   .klient
-   .samochód
-   .data od do
-   .stan sam. po oddaniu
-4. serwis
-    -dane:
-   .koszty
-   .opis napraw
-   .samochód
-5. powiadomienia
-   .względem przebiegu - serwis
-   .względem czasu - wypożyczenie
+
    
    
    
