@@ -1,23 +1,50 @@
-﻿public class Samochod
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class Samochod
 {
     public int Id { get; set; }
     public string Marka { get; set; }
     public string Model { get; set; }
     public int Rok { get; set; }
     public int Cena { get; set; }
+    public int CenaSprzedazy { get; set; }
+    public bool JestSprzedany { get; set; }
+    public Klient Kupujacy { get; set; }
+    public Sprzedaz Sprzedaz { get; set; }
 
-    public Samochod(int id, string marka, string model, int rok, int cena)
+    public Samochod(int id, string marka, string model, int rok, int cena, int cenaSprzedazy, bool jestSprzedany)
     {
         Id = id;
         Marka = marka;
         Model = model;
         Rok = rok;
         Cena = cena;
+        CenaSprzedazy = cenaSprzedazy;
+        JestSprzedany = false;
     }
 
     public override string ToString()
     {
-        return $"{Id} | {Marka} | {Model} | {Rok} | {Cena} PLN/dzień";
+        string info = $"{Id} | {Marka} | {Model} | {Rok} |  {Cena} PLN | {CenaSprzedazy} PLN | {(JestSprzedany ? "Sprzedany" : "")}";
+        if (JestSprzedany)
+        {
+            info += $" | Kupujący: {Kupujacy.Imie} {Kupujacy.Nazwisko} | Cena sprzedaży: {Sprzedaz.CenaSprzedazy} PLN | Data sprzedaży: {Sprzedaz.DataSprzedazy.ToShortDateString()}";
+        }
+        return info;
+    }
+}
+
+public class Sprzedaz
+{
+    public int CenaSprzedazy { get; set; }
+    public DateTime DataSprzedazy { get; set; }
+
+    public Sprzedaz(int cenaSprzedazy, DateTime dataSprzedazy)
+    {
+        CenaSprzedazy = cenaSprzedazy;
+        DataSprzedazy = dataSprzedazy;
     }
 }
 public class Klient
@@ -27,7 +54,8 @@ public class Klient
     public string Nazwisko { get; set; }
     public string Adres { get; set; }
     public string NumerTelefonu { get; set; }
-    
+
+
 
     public Klient(int id, string imie, string nazwisko, string adres, string numerTelefonu)
     {
@@ -41,6 +69,7 @@ public class Klient
     public override string ToString()
     {
         return $"{Id} | {Imie} | {Nazwisko} | {Adres} | {NumerTelefonu}";
+
     }
 }
 
@@ -52,7 +81,7 @@ public class Zarzadzanie
 
     public Zarzadzanie()
     {
-        klienci = new List<Klient>();   
+        klienci = new List<Klient>();
         samochody = new List<Samochod>();
         przypiszId = 1;
         przypiszIdKlienta = 1;
@@ -76,9 +105,9 @@ public class Zarzadzanie
             Console.WriteLine($"Nie znaleziono klienta z id {id}");
         }
     }
-    public void DodajSamochod(string marka, string model, int rok, int cena)
+    public void DodajSamochod(string marka, string model, int rok, int cena, int cenaSprzedazy, bool jestSprzedany)
     {
-        var samochod = new Samochod(przypiszId++, marka, model, rok, cena);
+        var samochod = new Samochod(przypiszId++, marka, model, rok, cena, cenaSprzedazy, jestSprzedany);
         samochody.Add(samochod);
     }
 
@@ -120,6 +149,7 @@ public class Zarzadzanie
         }
     }
 
+
     public void EdytujSamochod(int id, string marka, string model, int rok, int cena)
     {
         var samochod = samochody.FirstOrDefault(x => x.Id == id);
@@ -140,23 +170,54 @@ public class Zarzadzanie
     {
         foreach (var samochod in samochody)
         {
-            Console.WriteLine(samochod);
+            if (samochod.JestSprzedany == false)
+            {
+                Console.WriteLine(samochod);
+            }
         }
+    }
+
+    public void WyswietlSamochodySprzedane()
+    {
+        foreach (var samochod in samochody)
+        {
+            if (samochod.JestSprzedany)
+            {
+                Console.WriteLine(samochod);
+            }
+        }
+    }
+
+    public void WyswietlSamochod(int id)
+    {
+        var samochod = samochody.FirstOrDefault(x => x.Id == id);
+
+        Console.WriteLine(samochod);
+
+    }
+
+    public void OznaczJakoSprzedany(int idSamochodu, int idKlienta, int cenaSprzedazy, DateTime dataSprzedazy)
+    {
+        var samochod = samochody.FirstOrDefault(x => x.Id == idSamochodu);
+        var klient = klienci.FirstOrDefault(x => x.Id == idKlienta);
+        samochod.JestSprzedany = true;
+        samochod.Kupujacy = klient;
+        samochod.Sprzedaz = new Sprzedaz(cenaSprzedazy, dataSprzedazy);
     }
 }
 
-class program
+class Program
 {
     static void Main()
     {
-       
+
         var zarzadzanie = new Zarzadzanie();
 
-        zarzadzanie.DodajSamochod("BMW", "Seria 3", 2018, 85000);
-        zarzadzanie.DodajSamochod("Mercedes-Benz", "Klasa C", 2019, 110000);
-        zarzadzanie.DodajSamochod("Audi", "A4", 2017, 75000);
-        zarzadzanie.DodajSamochod("Volkswagen", "Golf", 2020, 70000);
-        zarzadzanie.DodajSamochod("Ford", "Focus", 2016, 45000);
+        zarzadzanie.DodajSamochod("BMW", "Seria 3", 2018, 50000, 85000, false);
+        zarzadzanie.DodajSamochod("Mercedes-Benz", "Klasa C", 2019, 50000, 110000, false);
+        zarzadzanie.DodajSamochod("Audi", "A4", 2017, 50000, 75000, false);
+        zarzadzanie.DodajSamochod("Volkswagen", "Golf", 2020, 50000, 70000, false);
+        zarzadzanie.DodajSamochod("Ford", "Focus", 2016, 50000, 45000, false);
 
         zarzadzanie.DodajKlienta("Jan", "Kowalski", "ul. Kwiatowa 5, Warszawa", "+48 501 234 567");
         zarzadzanie.DodajKlienta("Anna", "Nowak", "ul. Leśna 10, Kraków", "+48 600 987 654");
@@ -171,6 +232,7 @@ class program
             Console.WriteLine("Wypożyczalnia samochodów");
             Console.WriteLine("1. Klienci");
             Console.WriteLine("2. Samochody");
+            Console.WriteLine("3. Wyjdź");
             Console.Write("Wybierz opcję: ");
             var wybor = int.Parse(Console.ReadLine());
 
@@ -215,9 +277,6 @@ class program
                             Console.WriteLine("Wybrano nieprawidłową opcję.");
                             break;
                     }
-
-                    if (opcja == "5")
-                        break; 
                 }
             }
             else if (wybor == 2)
@@ -229,8 +288,10 @@ class program
                     Console.WriteLine("1. Dodaj samochód");
                     Console.WriteLine("2. Usuń samochód");
                     Console.WriteLine("3. Edytuj samochód");
-                    Console.WriteLine("4. Wyświetl listę samochodów");
-                    Console.WriteLine("5. Powrót do głównego menu");
+                    Console.WriteLine("4. Wyświetl listę samochodów, które są niesprzedane");
+                    Console.WriteLine("5. Oznacz samochód jako sprzedany");
+                    Console.WriteLine("6. Wyświetl listę sprzedanych samochodów");
+                    Console.WriteLine("7. Powrót do głównego menu");
                     Console.Write("Wybierz opcję: ");
                     var opcja = Console.ReadLine();
 
@@ -247,7 +308,6 @@ class program
                             break;
                         case "3":
                             Console.Clear();
-                            Console.WriteLine("Wpisz id samochodu, który chcesz edytować.");
                             EdytujSamochod(zarzadzanie);
                             break;
                         case "4":
@@ -256,21 +316,41 @@ class program
                             break;
                         case "5":
                             Console.Clear();
+                            zarzadzanie.WyswietlSamochody();
+                            OznaczJakoSprzedany(zarzadzanie);
+                            break;
+                        case "6":
+                            Console.Clear();
+                            zarzadzanie.WyswietlSamochodySprzedane();
+                            break;
+                        case "7":
                             break;
                         default:
                             Console.Clear();
                             Console.WriteLine("Wybrano nieprawidłową opcję.");
                             break;
                     }
-
-                    if (opcja == "5")
-                        break; 
                 }
             }
-            else
+            else if (wybor == 3)
             {
-                Console.WriteLine("Wybrano nieprawidłową opcję");
+                break;
             }
+        }
+
+        static void OznaczJakoSprzedany(Zarzadzanie zarzadzanie)
+        {
+            Console.WriteLine("Podaj id samochod, który został sprzedany");
+            var idSamochodu = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj id klienta, który zakupił samochód");
+            var idKlienta = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj cene sprzedaży");
+            var cenaSprzedazy = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj datę sprzedaży (yyyy-mm-dd):");
+            DateTime.TryParse(Console.ReadLine(), out DateTime dataSprzedazy);
+
+
+            zarzadzanie.OznaczJakoSprzedany(idSamochodu, idKlienta, cenaSprzedazy, dataSprzedazy);
         }
 
         static void DodajKlienta(Zarzadzanie zarzadzanie)
@@ -314,8 +394,11 @@ class program
             var rok = int.Parse(Console.ReadLine());
             Console.WriteLine("Podaj cena samochodu");
             var cena = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj cena sprzedaży");
+            var cenaSprzedazy = int.Parse(Console.ReadLine());
+            var jestSprzedany = false;
 
-            zarzadzanie.DodajSamochod(marka, model, rok, cena);
+            zarzadzanie.DodajSamochod(marka, model, rok, cena, cenaSprzedazy, jestSprzedany);
         }
 
         static void UsunSamochod(Zarzadzanie zarzadzanie)
@@ -326,11 +409,17 @@ class program
 
         static void EdytujSamochod(Zarzadzanie zarzadzanie)
         {
+            Console.Clear();
             Console.WriteLine("Podaj id samochodu do edycji");
             var id = int.Parse(Console.ReadLine());
+            zarzadzanie.WyswietlSamochod(id);
+            Console.WriteLine("Podaj markę samochodu: ");
             var marka = Console.ReadLine();
+            Console.WriteLine("Podaj model samochodu: ");
             var model = Console.ReadLine();
+            Console.WriteLine("Podaj rok produkcji: ");
             var rok = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj cene samochodu: ");
             var cena = int.Parse(Console.ReadLine());
             zarzadzanie.EdytujSamochod(id, marka, model, rok, cena);
         }
