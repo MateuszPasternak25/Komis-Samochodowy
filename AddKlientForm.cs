@@ -30,5 +30,10 @@ namespace WindowsFormsApp2
             zarzadzanie.DodajKlienta(imie, nazwisko, adres, telefon);
             this.Close();
         }
+
+        private void AddKlientForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
