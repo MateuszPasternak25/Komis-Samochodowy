@@ -29,31 +29,39 @@ namespace WindowsFormsApp2
             // 
             // txtImie
             // 
+            this.txtImie.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtImie.Location = new System.Drawing.Point(12, 12);
             this.txtImie.Name = "txtImie";
             this.txtImie.Size = new System.Drawing.Size(100, 20);
             this.txtImie.TabIndex = 0;
+            this.txtImie.Text = "Imie";
             // 
             // txtNazwisko
             // 
+            this.txtNazwisko.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtNazwisko.Location = new System.Drawing.Point(12, 38);
             this.txtNazwisko.Name = "txtNazwisko";
             this.txtNazwisko.Size = new System.Drawing.Size(100, 20);
             this.txtNazwisko.TabIndex = 1;
+            this.txtNazwisko.Text = "Nazwisko";
             // 
             // txtAdres
             // 
+            this.txtAdres.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtAdres.Location = new System.Drawing.Point(12, 64);
             this.txtAdres.Name = "txtAdres";
             this.txtAdres.Size = new System.Drawing.Size(100, 20);
             this.txtAdres.TabIndex = 2;
+            this.txtAdres.Text = "Adres";
             // 
             // txtTelefon
             // 
+            this.txtTelefon.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtTelefon.Location = new System.Drawing.Point(12, 90);
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(100, 20);
             this.txtTelefon.TabIndex = 3;
+            this.txtTelefon.Text = "Nr Telefonu";
             // 
             // btnDodaj
             // 
@@ -69,7 +77,7 @@ namespace WindowsFormsApp2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(128, 151);
+            this.ClientSize = new System.Drawing.Size(711, 151);
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.txtAdres);
@@ -77,8 +85,10 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.txtImie);
             this.Name = "AddKlientForm";
             this.Text = "Dodaj Klienta";
+            this.Load += new System.EventHandler(this.AddKlientForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }
