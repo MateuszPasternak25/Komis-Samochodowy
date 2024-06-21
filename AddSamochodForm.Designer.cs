@@ -33,38 +33,48 @@ namespace WindowsFormsApp2
             // 
             // txtMarka
             // 
+            this.txtMarka.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtMarka.Location = new System.Drawing.Point(12, 12);
             this.txtMarka.Name = "txtMarka";
             this.txtMarka.Size = new System.Drawing.Size(100, 20);
             this.txtMarka.TabIndex = 0;
+            this.txtMarka.Text = "Marka";
             // 
             // txtModel
             // 
+            this.txtModel.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtModel.Location = new System.Drawing.Point(12, 38);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(100, 20);
             this.txtModel.TabIndex = 1;
+            this.txtModel.Text = "Model";
             // 
             // txtRocznik
             // 
+            this.txtRocznik.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtRocznik.Location = new System.Drawing.Point(12, 64);
             this.txtRocznik.Name = "txtRocznik";
             this.txtRocznik.Size = new System.Drawing.Size(100, 20);
             this.txtRocznik.TabIndex = 2;
+            this.txtRocznik.Text = "Rocznik";
             // 
             // txtPrzebieg
             // 
+            this.txtPrzebieg.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtPrzebieg.Location = new System.Drawing.Point(12, 90);
             this.txtPrzebieg.Name = "txtPrzebieg";
             this.txtPrzebieg.Size = new System.Drawing.Size(100, 20);
             this.txtPrzebieg.TabIndex = 3;
+            this.txtPrzebieg.Text = "Przebieg";
             // 
             // txtCena
             // 
+            this.txtCena.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtCena.Location = new System.Drawing.Point(12, 116);
             this.txtCena.Name = "txtCena";
             this.txtCena.Size = new System.Drawing.Size(100, 20);
             this.txtCena.TabIndex = 4;
+            this.txtCena.Text = "Cena Zakupu";
             // 
             // chkCzySprzedany
             // 
@@ -90,7 +100,7 @@ namespace WindowsFormsApp2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(128, 200);
+            this.ClientSize = new System.Drawing.Size(518, 200);
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.chkCzySprzedany);
             this.Controls.Add(this.txtCena);
