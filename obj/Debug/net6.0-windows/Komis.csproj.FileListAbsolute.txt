@@ -1,0 +1,60 @@
+F:\gicik\Komis\bin\Debug\net6.0-windows\Komis.exe
+F:\gicik\Komis\bin\Debug\net6.0-windows\Komis.deps.json
+F:\gicik\Komis\bin\Debug\net6.0-windows\Komis.runtimeconfig.json
+F:\gicik\Komis\bin\Debug\net6.0-windows\Komis.dll
+F:\gicik\Komis\bin\Debug\net6.0-windows\Komis.pdb
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.Form1.resources
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.csproj.GenerateResource.cache
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.GeneratedMSBuildEditorConfig.editorconfig
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.AssemblyInfoInputs.cache
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.AssemblyInfo.cs
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.csproj.CoreCompileInputs.cache
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.dll
+F:\gicik\Komis\obj\Debug\net6.0-windows\refint\Komis.dll
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.pdb
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.genruntimeconfig.cache
+F:\gicik\Komis\obj\Debug\net6.0-windows\ref\Komis.dll
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.EdytujSamochodForm.resources
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.EdytujKlient.resources
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.OznJakoSprzedanyForm.resources
+F:\gicik\Komis\obj\Debug\net6.0-windows\Komis.ZarzadzajKlientemForm.resources
+F:\gicik\Komis — crashtest\bin\Debug\net6.0-windows\Komis.exe
+F:\gicik\Komis — crashtest\bin\Debug\net6.0-windows\Komis.deps.json
+F:\gicik\Komis — crashtest\bin\Debug\net6.0-windows\Komis.runtimeconfig.json
+F:\gicik\Komis — crashtest\bin\Debug\net6.0-windows\Komis.dll
+F:\gicik\Komis — crashtest\bin\Debug\net6.0-windows\Komis.pdb
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.EdytujKlient.resources
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.EdytujSamochodForm.resources
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.Form1.resources
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.OznJakoSprzedanyForm.resources
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.ZarzadzajKlientemForm.resources
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.csproj.GenerateResource.cache
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.GeneratedMSBuildEditorConfig.editorconfig
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.AssemblyInfoInputs.cache
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.AssemblyInfo.cs
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.csproj.CoreCompileInputs.cache
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.dll
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\refint\Komis.dll
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.pdb
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\Komis.genruntimeconfig.cache
+F:\gicik\Komis — crashtest\obj\Debug\net6.0-windows\ref\Komis.dll
+D:\GitDesk\Komis-Samochodowy\bin\Debug\net6.0-windows\Komis.exe
+D:\GitDesk\Komis-Samochodowy\bin\Debug\net6.0-windows\Komis.deps.json
+D:\GitDesk\Komis-Samochodowy\bin\Debug\net6.0-windows\Komis.runtimeconfig.json
+D:\GitDesk\Komis-Samochodowy\bin\Debug\net6.0-windows\Komis.dll
+D:\GitDesk\Komis-Samochodowy\bin\Debug\net6.0-windows\Komis.pdb
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.EdytujKlient.resources
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.EdytujSamochodForm.resources
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.Form1.resources
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.OznJakoSprzedanyForm.resources
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.ZarzadzajKlientemForm.resources
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.csproj.GenerateResource.cache
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.AssemblyInfoInputs.cache
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.AssemblyInfo.cs
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.csproj.CoreCompileInputs.cache
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.dll
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\refint\Komis.dll
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.pdb
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.genruntimeconfig.cache
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\ref\Komis.dll
