@@ -1,4 +1,4 @@
-#Komis Samochodowy App#
+#Komis Samochodowy App
 
 ## Opis projektu
 
