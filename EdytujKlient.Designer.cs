@@ -34,6 +34,10 @@
             textBoxNumerE = new TextBox();
             Zapisz = new Button();
             Usun = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // textBoxImieE
@@ -54,12 +58,12 @@
             // 
             textBoxAdresE.Location = new Point(227, 36);
             textBoxAdresE.Name = "textBoxAdresE";
-            textBoxAdresE.Size = new Size(100, 23);
+            textBoxAdresE.Size = new Size(192, 23);
             textBoxAdresE.TabIndex = 2;
             // 
             // textBoxNumerE
             // 
-            textBoxNumerE.Location = new Point(333, 36);
+            textBoxNumerE.Location = new Point(425, 36);
             textBoxNumerE.Name = "textBoxNumerE";
             textBoxNumerE.Size = new Size(100, 23);
             textBoxNumerE.TabIndex = 3;
@@ -76,7 +80,7 @@
             // 
             // Usun
             // 
-            Usun.Location = new Point(358, 65);
+            Usun.Location = new Point(450, 65);
             Usun.Name = "Usun";
             Usun.Size = new Size(75, 23);
             Usun.TabIndex = 5;
@@ -84,11 +88,51 @@
             Usun.UseVisualStyleBackColor = true;
             Usun.Click += Usun_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(15, 18);
+            label1.Name = "label1";
+            label1.Size = new Size(30, 15);
+            label1.TabIndex = 6;
+            label1.Text = "Imię";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(121, 18);
+            label2.Name = "label2";
+            label2.Size = new Size(57, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Nazwisko";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(227, 18);
+            label3.Name = "label3";
+            label3.Size = new Size(37, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Adres";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(434, 18);
+            label4.Name = "label4";
+            label4.Size = new Size(91, 15);
+            label4.TabIndex = 9;
+            label4.Text = "Numer telefonu";
+            // 
             // EdytujKlient
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(545, 110);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(Usun);
             Controls.Add(Zapisz);
             Controls.Add(textBoxNumerE);
@@ -96,6 +140,7 @@
             Controls.Add(textBoxNazwiskoE);
             Controls.Add(textBoxImieE);
             Name = "EdytujKlient";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EdytujKlient";
             ResumeLayout(false);
             PerformLayout();
@@ -109,5 +154,9 @@
         private TextBox textBoxNumerE;
         private Button Zapisz;
         private Button Usun;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }
