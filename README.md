@@ -21,7 +21,7 @@ Projekt jest prostą aplikacją do zarządzania komisem samochodowym. Umożliwia
 
 ## Jak uruchomić
 
-1. Upewnijdsgfsdgfsd się, że masz zainstalowane środowisko programistyczne, takie jak Visual Studio.
+1. Upewnij się, że masz zainstalowane środowisko programistyczne, takie jak Visual Studio.
 2. Otwórz projekt w Visual Studio.
 3. Zbuduj projekt, klikając "Build" -> "Build Solution".
 4. Uruchom aplikację, klikając "Debug" -> "Start Debugging".
@@ -59,7 +59,7 @@ Aby oznaczyć samochód jako sprzedany, kliknij dwukrotnie na wybrany samochód 
 - .NET Framework 4.7.2 lub nowszy
 - System operacyjny Windows
 
-## Autor
+## Autorzy
 
 - Mateusz Mendyk
 - Mateusz Pasternak
