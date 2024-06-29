@@ -56,7 +56,7 @@ Aby oznaczyć samochód jako sprzedany, kliknij dwukrotnie na wybrany samochód 
 
 ## Wymagania systemowe
 
-- .NET Framework 4.7.2 lub nowszy
+- .NET Framework 6.0.0 lub nowszy
 - System operacyjny Windows
 
 ## Autorzy
