@@ -63,3 +63,8 @@ Aby oznaczyć samochód jako sprzedany, kliknij dwukrotnie na wybrany samochód 
 
 - Mateusz Mendyk
 - Mateusz Pasternak
+
+  -obietówka:
+  dziedziczenie/polimorfizm/hermetyzacja
+  baza danych
+
