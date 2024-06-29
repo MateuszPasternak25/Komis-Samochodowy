@@ -19,7 +19,7 @@ Projekt jest prostą aplikacją do zarządzania komisem samochodowym. Umożliwia
 - `EdytujSamochodForm.cs`: Formularz do edytowania informacji o samochodach.
 - `Program.cs`: Punkt wejścia do aplikacji.
 
-## Jak uruchomić
+## Jak uruchomić ##
 
 1. Upewnij się, że masz zainstalowane środowisko programistyczne, takie jak Visual Studio.
 2. Otwórz projekt w Visual Studio.
