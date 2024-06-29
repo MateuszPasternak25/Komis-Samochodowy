@@ -1,6 +1,6 @@
 
 
-#Komis
+# Komis #
 
 ## Opis projektu
 
