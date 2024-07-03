@@ -1,4 +1,6 @@
 using System.Windows.Forms;
+using System.Linq;
+using System.Collections.Generic;
 
 public class Zarzadzanie
 {
@@ -35,7 +37,6 @@ public class Zarzadzanie
     {
         var samochod = samochody.FirstOrDefault(x => x.Id == id);
         samochody.Remove(samochod);
-
     }
 
     public void EdytujKlienta(int id, string imie, string nazwisko, string adres, string numerTelefonu)
@@ -55,16 +56,13 @@ public class Zarzadzanie
         }
     }
 
-
     public void EdytujSamochod(int id, string marka, string model, int rok, int cena)
     {
         var samochod = samochody.FirstOrDefault(x => x.Id == id);
-
         samochod.Marka = marka;
         samochod.Model = model;
         samochod.Rok = rok;
         samochod.Cena = cena;
-
     }
 
     public void WyswietlSamochody(ListBox listBox)
@@ -72,7 +70,6 @@ public class Zarzadzanie
         foreach (var samochod in samochody)
         {
             listBox.Items.Add(samochod);
-
         }
     }
 
@@ -80,7 +77,7 @@ public class Zarzadzanie
     {
         foreach (var samochod in samochody)
         {
-            if (samochod.JestSprzedany == false)
+            if (!samochod.JestSprzedany)
             {
                 listBox.Items.Add(samochod);
             }
