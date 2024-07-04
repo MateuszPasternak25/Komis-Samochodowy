@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
-namespace Komis
+﻿namespace Komis
 {
     public partial class EdytujSamochodForm : Form
     {
@@ -22,7 +11,6 @@ namespace Komis
             this.zarzadzanie = zarzadzanie;
             LoadSamochodData();
         }
-
         private void LoadSamochodData()
         {
             textBoxMarkaE.Text = samochod.Marka;
@@ -31,7 +19,6 @@ namespace Komis
             textBoxCenaE.Text = samochod.Cena.ToString();
             textBoxCenaWE.Text = samochod.CenaSprzedazy.ToString();
         }
-
         private void SaveSamochodData()
         {
             samochod.Marka = textBoxMarkaE.Text;
@@ -43,15 +30,13 @@ namespace Komis
         private void ZapiszButton_Click(object sender, EventArgs e)
         {
             SaveSamochodData();
-            this.Close();
+            Close();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             zarzadzanie.UsunSamochod(samochod.Id);
-            this.Close();
+            Close();
         }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             OznJakoSprzedanyForm oznJakoSprzedany = new OznJakoSprzedanyForm(zarzadzanie, samochod);

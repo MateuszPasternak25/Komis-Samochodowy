@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6C4tnWMVIeZVDM8PHJBsPQN6lNLqz/I4JkFqE1l4PqyXg3ijpBKgSsKr1mA6VDWP3XUvAp8iX1j5zwmIRQXIlg==",
+  "dgSpecHash": "doOmhxxxbjTr+e+HUTNauK+o2rQ9XnL9agHsPxJfiDYvixfbkCwUc5Of3Ca8+YzVmyXLKesOPhUOJ6SAdViPGw==",
   "success": true,
   "projectFilePath": "D:\\GitDesk\\Komis-Samochodowy\\Komis.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mateu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

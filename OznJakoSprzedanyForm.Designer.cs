@@ -40,14 +40,14 @@
             // 
             // textBoxCenaSprzedazy
             // 
-            textBoxCenaSprzedazy.Location = new Point(118, 415);
+            textBoxCenaSprzedazy.Location = new Point(130, 415);
             textBoxCenaSprzedazy.Name = "textBoxCenaSprzedazy";
             textBoxCenaSprzedazy.Size = new Size(100, 23);
             textBoxCenaSprzedazy.TabIndex = 0;
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(224, 415);
+            dateTimePicker1.Location = new Point(252, 415);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             // buttonOznacz
             // 
-            buttonOznacz.Location = new Point(713, 415);
+            buttonOznacz.Location = new Point(713, 414);
             buttonOznacz.Name = "buttonOznacz";
             buttonOznacz.Size = new Size(75, 23);
             buttonOznacz.TabIndex = 5;
@@ -82,7 +82,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(29, 397);
+            label1.Location = new Point(12, 397);
             label1.Name = "label1";
             label1.Size = new Size(57, 15);
             label1.TabIndex = 6;
@@ -100,7 +100,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(312, 397);
+            label3.Location = new Point(252, 397);
             label3.Name = "label3";
             label3.Size = new Size(31, 15);
             label3.TabIndex = 8;

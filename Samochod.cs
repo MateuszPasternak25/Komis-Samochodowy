@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 public class Samochod : Pojazd
 {
     public int CenaSprzedazy { get; set; }
@@ -14,7 +11,6 @@ public class Samochod : Pojazd
         CenaSprzedazy = cenaSprzedazy;
         JestSprzedany = jestSprzedany;
     }
-
     public override string ToString()
     {
         string info = $"{base.ToString()} | {CenaSprzedazy} PLN | {(JestSprzedany ? "Sprzedany" : "")}";

@@ -46,7 +46,7 @@
             ListaKlientow.ItemHeight = 15;
             ListaKlientow.Location = new Point(12, 12);
             ListaKlientow.Name = "ListaKlientow";
-            ListaKlientow.Size = new Size(758, 349);
+            ListaKlientow.Size = new Size(776, 349);
             ListaKlientow.TabIndex = 0;
             ListaKlientow.DoubleClick += ListaKlientow_DoubleClick;
             // 
@@ -80,7 +80,7 @@
             // 
             // Dodaj
             // 
-            Dodaj.Location = new Point(436, 394);
+            Dodaj.Location = new Point(713, 394);
             Dodaj.Name = "Dodaj";
             Dodaj.Size = new Size(75, 23);
             Dodaj.TabIndex = 5;
@@ -91,7 +91,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(43, 375);
+            label1.Location = new Point(12, 377);
             label1.Name = "label1";
             label1.Size = new Size(30, 15);
             label1.TabIndex = 6;
@@ -100,7 +100,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(156, 374);
+            label2.Location = new Point(118, 377);
             label2.Name = "label2";
             label2.Size = new Size(57, 15);
             label2.TabIndex = 7;
@@ -109,7 +109,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(247, 375);
+            label3.Location = new Point(224, 375);
             label3.Name = "label3";
             label3.Size = new Size(37, 15);
             label3.TabIndex = 8;
@@ -118,7 +118,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(330, 375);
+            label4.Location = new Point(330, 377);
             label4.Name = "label4";
             label4.Size = new Size(92, 15);
             label4.TabIndex = 9;

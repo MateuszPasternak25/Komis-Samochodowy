@@ -14,7 +14,6 @@ public class Osoba
         Adres = adres;
         NumerTelefonu = numerTelefonu;
     }
-
     public override string ToString()
     {
         return $"{Id} | {Imie} | {Nazwisko} | ul. {Adres} | {NumerTelefonu}";

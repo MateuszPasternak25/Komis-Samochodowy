@@ -79,3 +79,6 @@ C:\Users\paste\Documents\GitHub\Komis-Samochodowy1\obj\Debug\net6.0-windows\refi
 C:\Users\paste\Documents\GitHub\Komis-Samochodowy1\obj\Debug\net6.0-windows\Komis.pdb
 C:\Users\paste\Documents\GitHub\Komis-Samochodowy1\obj\Debug\net6.0-windows\Komis.genruntimeconfig.cache
 C:\Users\paste\Documents\GitHub\Komis-Samochodowy1\obj\Debug\net6.0-windows\ref\Komis.dll
+D:\GitDesk\Komis-Samochodowy\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.csproj.AssemblyReference.cache
+D:\GitDesk\Komis-Samochodowy\obj\Debug\net6.0-windows\Komis.csproj.CopyComplete

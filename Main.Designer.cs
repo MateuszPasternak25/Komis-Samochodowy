@@ -56,7 +56,6 @@
             ListaSamochod.Name = "ListaSamochod";
             ListaSamochod.Size = new Size(1269, 379);
             ListaSamochod.TabIndex = 0;
-            ListaSamochod.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             ListaSamochod.DoubleClick += ListaSamochod_DoubleClick;
             // 
             // samochodBindingSource

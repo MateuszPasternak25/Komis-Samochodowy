@@ -8,13 +8,13 @@ Projekt jest prostą aplikacją do zarządzania komisem samochodowym. Umożliwia
 
 ## Struktura plików
 
-- `Main.cs`: Główny plik aplikacji, zawierający logikę interfejsu użytkownika.
-- `Main.Designer.cs`: Plik generowany przez projektanta, zawierający definicje kontrolek używanych w interfejsie użytkownika.
+
 - `Zarzadzanie.cs`: Klasa zarządzająca logiką biznesową aplikacji, taką jak dodawanie, usuwanie i edytowanie samochodów i klientów.
-- `ZarzadzajKlientemForm.cs`: Formularz do zarządzania klientami.
 - `Samochod.cs`: Klasa reprezentująca samochód.
 - `Klient.cs`: Klasa reprezentująca klienta.
-- `Sprzedaz.cs`: Klasa reprezentująca sprzedaż samochodu.
+- `Sprzedaz.cs`: Klasa reprezentująca informacje na temat sprzedaży samochodu.
+- `Main.cs`: Główny formularz aplikacji.
+- `ZarzadzajKlientemForm.cs`: Formularz do zarządzania klientami.
 - `OznJakoSprzedanyForm.cs`: Formularz do oznaczania samochodów jako sprzedane.
 - `EdytujSamochodForm.cs`: Formularz do edytowania informacji o samochodach.
 - `Program.cs`: Punkt wejścia do aplikacji.
@@ -23,8 +23,8 @@ Projekt jest prostą aplikacją do zarządzania komisem samochodowym. Umożliwia
 
 1. Upewnij się, że masz zainstalowane środowisko programistyczne, takie jak Visual Studio.
 2. Otwórz projekt w Visual Studio.
-3. Zbuduj projekt, klikając "Build" -> "Build Solution".
-4. Uruchom aplikację, klikając "Debug" -> "Start Debugging".
+3. Załącz aplikacje klikając u góry zielony trójkąt koło którego znajduję się napis "komis".
+
 
 ## Funkcjonalności
 
@@ -64,7 +64,12 @@ Aby oznaczyć samochód jako sprzedany, kliknij dwukrotnie na wybrany samochód 
 - Mateusz Mendyk
 - Mateusz Pasternak
 
-  -obietówka:
-  dziedziczenie/polimorfizm/hermetyzacja
-  baza danych
+ ## Aspekty objektowości w projekcie: 
+
+##  Dziedziczenie:
+- Klasa Samochód dziedziczy po klasie Pojazd
+- Klasa klient dziedziczy po klasie Osoba
+##  Polimorfizm
+- Metoda ToString() w klasie Pojazd i Samochod
+
 

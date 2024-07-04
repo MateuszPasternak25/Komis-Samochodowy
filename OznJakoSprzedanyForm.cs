@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Komis
+﻿namespace Komis
 {
     public partial class OznJakoSprzedanyForm : Form
     {
@@ -34,7 +24,7 @@ namespace Komis
             DateTime dataSprzedazy = dateTimePicker1.Value;
 
             zarzadzanie.OznaczJakoSprzedany(samochod.Id, idKlienta, cenaSprzedazy, dataSprzedazy);
-            this.Close();
+            Close();
         }
     }
 }

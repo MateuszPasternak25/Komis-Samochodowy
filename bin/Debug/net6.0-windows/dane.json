@@ -1,0 +1,93 @@
+{
+  "Klienci": [
+    {
+      "Id": 1,
+      "Imie": "Adrian",
+      "Nazwisko": "Zarno",
+      "Adres": "Wies",
+      "NumerTelefonu": "123123123"
+    },
+    {
+      "Id": 2,
+      "Imie": "Mateusz",
+      "Nazwisko": "Mendyk",
+      "Adres": "Jakas",
+      "NumerTelefonu": "321321321"
+    }
+  ],
+  "Samochody": [
+    {
+      "CenaSprzedazy": 110000,
+      "JestSprzedany": false,
+      "Kupujacy": null,
+      "Sprzedaz": null,
+      "Id": 2,
+      "Marka": "Mercedes-Benz",
+      "Model": "Klasa C",
+      "Rok": 2019,
+      "Cena": 50000
+    },
+    {
+      "CenaSprzedazy": 75000,
+      "JestSprzedany": false,
+      "Kupujacy": null,
+      "Sprzedaz": null,
+      "Id": 3,
+      "Marka": "Audi",
+      "Model": "A4",
+      "Rok": 2017,
+      "Cena": 50000
+    },
+    {
+      "CenaSprzedazy": 70000,
+      "JestSprzedany": false,
+      "Kupujacy": null,
+      "Sprzedaz": null,
+      "Id": 4,
+      "Marka": "Volkswagen",
+      "Model": "Golf",
+      "Rok": 2020,
+      "Cena": 50000
+    },
+    {
+      "CenaSprzedazy": 45000,
+      "JestSprzedany": true,
+      "Kupujacy": {
+        "Id": 2,
+        "Imie": "Mateusz",
+        "Nazwisko": "Mendyk",
+        "Adres": "Jakas",
+        "NumerTelefonu": "321321321"
+      },
+      "Sprzedaz": {
+        "CenaSprzedazy": 555,
+        "DataSprzedazy": "2024-07-04T02:30:31.4775834+02:00"
+      },
+      "Id": 5,
+      "Marka": "Ford",
+      "Model": "Focus",
+      "Rok": 2016,
+      "Cena": 50000
+    },
+    {
+      "CenaSprzedazy": 35000,
+      "JestSprzedany": true,
+      "Kupujacy": {
+        "Id": 1,
+        "Imie": "Adrian",
+        "Nazwisko": "Zarno",
+        "Adres": "Wies",
+        "NumerTelefonu": "123123123"
+      },
+      "Sprzedaz": {
+        "CenaSprzedazy": 5,
+        "DataSprzedazy": "2024-07-04T02:27:24.5173235+02:00"
+      },
+      "Id": 6,
+      "Marka": "A3",
+      "Model": "Audi",
+      "Rok": 2005,
+      "Cena": 30000
+    }
+  ]
+}

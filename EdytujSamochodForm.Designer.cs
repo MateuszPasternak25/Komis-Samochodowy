@@ -111,7 +111,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(72, 3);
+            label1.Location = new Point(37, 3);
             label1.Name = "label1";
             label1.Size = new Size(40, 15);
             label1.TabIndex = 8;
@@ -120,7 +120,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(168, 3);
+            label2.Location = new Point(143, 2);
             label2.Name = "label2";
             label2.Size = new Size(41, 15);
             label2.TabIndex = 9;
@@ -129,7 +129,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(287, 3);
+            label3.Location = new Point(249, 3);
             label3.Name = "label3";
             label3.Size = new Size(27, 15);
             label3.TabIndex = 10;
@@ -138,7 +138,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(368, 3);
+            label4.Location = new Point(355, 3);
             label4.Name = "label4";
             label4.Size = new Size(70, 15);
             label4.TabIndex = 11;
@@ -147,7 +147,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(461, 3);
+            label5.Location = new Point(460, 3);
             label5.Name = "label5";
             label5.Size = new Size(101, 15);
             label5.TabIndex = 12;
@@ -157,7 +157,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(606, 113);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);

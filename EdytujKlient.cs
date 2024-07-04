@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Komis
+﻿namespace Komis
 {
     public partial class EdytujKlient : Form
     {
@@ -28,7 +18,6 @@ namespace Komis
             klient.Adres = textBoxAdresE.Text;
             klient.NumerTelefonu = textBoxNumerE.Text;
         }
-
         private void LoadSamochodData()
         {
             textBoxImieE.Text = klient.Imie;
@@ -37,17 +26,15 @@ namespace Komis
             textBoxNumerE.Text = klient.NumerTelefonu;
 
         }
-
         private void Zapisz_Click(object sender, EventArgs e)
         {
             ZapiszZmiany();
-            this.Close();
+            Close();
         }
-
         private void Usun_Click(object sender, EventArgs e)
         {
             zarzadzanie.UsunKlienta(klient.Id);
-            this.Close();
+            Close();
         }
     }
 }
