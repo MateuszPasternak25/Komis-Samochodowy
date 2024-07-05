@@ -40,13 +40,13 @@ Aby oznaczyć samochód jako sprzedany, kliknij dwukrotnie na wybrany samochód 
 
 ![OznJakSprzed](https://github.com/MateuszPasternak25/Komis-Samochodowy/assets/168337261/4ea191a9-e85d-4f91-8466-10699b6d26be)
 
-### Dodawanie klientów
+## Dodawanie klientów
 
 Aby dodać nowego klienta, otwórz formularz zarządzania klientami, wypełnij pola "Imię", "Nazwisko", "Adres" oraz "Numer telefonu" i kliknij przycisk "Dodaj". Nowy klient zostanie dodany do listy klientów.
 
 ![DodKli](https://github.com/MateuszPasternak25/Komis-Samochodowy/assets/168337261/9208c2e3-f843-4891-8d53-39eadf1e4ccf)
 
-### Edytowanie klientów
+## Edytowanie klientów
 
 Aby edytować klienta, kliknij dwukrotnie na wybranego klienta z listy. Otworzy się formularz, w którym można zmienić dane klienta.
 
@@ -73,6 +73,10 @@ Aby edytować klienta, kliknij dwukrotnie na wybranego klienta z listy. Otworzy 
 **Polimorfizm**
   
 - Metoda ToString() w klasie Pojazd i Samochod
+
+**Hermetyzacja**
+- Pola do przypisywanie ID dla samochodów i klientów
+- Metody WczytajDaneZPliku oraz ZapiszDane odpowiedzialne za zapisywanie i odczyt danych
 
 ## Wymagania systemowe
 
