@@ -38,7 +38,7 @@ Aby oznaczyć samochód jako sprzedany, kliknij dwukrotnie na wybrany samochód 
 
 ![OznJakSprzed](https://github.com/MateuszPasternak25/Komis-Samochodowy/assets/168337261/64cb6b73-4c93-4f0a-a177-9bfcb605a017)
 
-![OznJakSprzed](https://github.com/MateuszPasternak25/Komis-Samochodowy/assets/168337261/4ea191a9-e85d-4f91-8466-10699b6d26be)
+![OznJakoSprzedOkno](https://github.com/MateuszPasternak25/Komis-Samochodowy/assets/168337261/195cf524-da40-4e4d-8934-e4054ca2be5d)
 
 ## Dodawanie klientów
 
